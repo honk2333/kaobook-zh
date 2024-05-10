@@ -42,6 +42,8 @@
 \usepackage{zhlipsum}
 %\usepackage{showframe}
 %\usepackage{showlabels}
+\usepackage{calc}
+
 
 \graphicspath{{images/}{./}} % Paths in which to look for images
 
@@ -151,7 +153,7 @@
 %       PREFACE
 %----------------------------------------------------------------------------------------
 
-\input{chapters/preface.tex}
+% \input{chapters/preface.tex}
 
 %----------------------------------------------------------------------------------------
 %       TABLE OF CONTENTS & LIST OF FIGURES/TABLES
@@ -165,7 +167,7 @@
 \setlength{\textheight}{23cm}
 
 % Turn on compatibility mode for the etoc package
-\etocstandarddisplaystyle % "toc display" as if etoc was not loaded
+\etocclasstocstyle % "toc display" as if etoc was not loaded
 \etocstandardlines % "toc lines as if etoc was not loaded
 
 \tableofcontents % Output the table of contents
@@ -191,29 +193,29 @@
 
 \input{chapters/introduction.tex}
 
-\pagelayout{wide} % No margins
-\addpart{类选项、命令和环境}
-\pagelayout{margin} % Restore margins
+% \pagelayout{wide} % No margins
+% \addpart{类选项、命令和环境}
+% \pagelayout{margin} % Restore margins
 
-\input{chapters/options.tex}
-\input{chapters/textnotes.tex}
-\input{chapters/figsntabs.tex}
-\input{chapters/references.tex}
+% \input{chapters/options.tex}
+% \input{chapters/textnotes.tex}
+% \input{chapters/figsntabs.tex}
+% \input{chapters/references.tex}
 
-\pagelayout{wide} % No margins
-\addpart{设计和附加功能}
-\pagelayout{margin} % Restore margins
+% \pagelayout{wide} % No margins
+% \addpart{设计和附加功能}
+% \pagelayout{margin} % Restore margins
 
-\input{chapters/layout.tex}
-\input{chapters/mathematics.tex}
+% \input{chapters/layout.tex}
+% \input{chapters/mathematics.tex}
 
-\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
+% \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 
-\pagelayout{wide} % No margins
-\addpart{附\ 录}
-\pagelayout{margin} % Restore margins
+% \pagelayout{wide} % No margins
+% \addpart{附\ 录}
+% \pagelayout{margin} % Restore margins
 
-\input{chapters/appendix.tex}
+% \input{chapters/appendix.tex}
 
 %----------------------------------------------------------------------------------------
 

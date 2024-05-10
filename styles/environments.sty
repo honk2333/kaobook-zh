@@ -3,7 +3,7 @@
 %----------------------------------------------------------------------------------------
 %	ITEMS
 %----------------------------------------------------------------------------------------
-
+\let\Bbbk\relax
 \usepackage{amssymb}
 \renewcommand{\labelitemi}{\small$\blacktriangleright$}
 \renewcommand{\labelitemii}{\textbullet}
@@ -59,7 +59,7 @@
 \newenvironment{kaocounter}{
 	\refstepcounter{kaocounter}
 	\begin{kaobox}[frametitle=注释~\thekaocounter\autodot]
-}{
+		}{
 	\end{kaobox}
 }
 
@@ -103,7 +103,7 @@
 \DeclareCiteCommand{\fullcite}{%
 	\defcounter{maxnames}{99}%
 	\usebibmacro{prenote}}
-	{\clearfield{url}%
+{\clearfield{url}%
 	\clearfield{pages}%
 	\clearfield{pagetotal}%
 	\clearfield{edition}%
