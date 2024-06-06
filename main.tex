@@ -65,10 +65,10 @@
 \titlehead{\texttt{人工智能产业概论}}
 \subject{使用此文档作为模板}
 
-\title[示例及说明文档 {人工智能产业概论} 类]{配套教材 \\ of the 人工智能产业概论 类}
+\title[]{人工智能产业概论 配套教材}
 \subtitle{根据自己需要定制本页}
 
-\author[张建兵]{张建兵}
+\author{张建兵}
 
 \date{\today}
 
@@ -142,6 +142,8 @@
 %----------------------------------------------------------------------------------------
 
 % Note that \maketitle will actually print many pages.
+\includepdf[pages=-, pagecommand={}]{封面.pdf}
+
 
 % If twoside=false, \uppertitleback and \lowertitleback are not printed. To overcome this issue, we set twoside=semi just before printing the title pages, and set it back to false just after the title pages.
 \KOMAoptions{twoside=semi}
@@ -151,7 +153,6 @@
 %----------------------------------------------------------------------------------------
 %       PREFACE
 %----------------------------------------------------------------------------------------
-
 \input{contents/0.preface.tex}
 
 %----------------------------------------------------------------------------------------

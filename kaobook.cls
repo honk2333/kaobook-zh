@@ -534,7 +534,6 @@
 %	HYPERREFERENCES
 %----------------------------------------------------------------------------------------
 
-\RequirePackage{hyperref} % Required for hyperlinks
 \RequirePackage{bookmark} % Required for pdf bookmarks
 
 \PassOptionsToPackage{hyphens}{url} % Break long URLs and use hyphens to separate the pieces
@@ -600,3 +599,4 @@
 
 \setlength{\parindent}{2em}
 \RequirePackage{indentfirst}
+\RequirePackage{hyperref} % Required for hyperlinks
